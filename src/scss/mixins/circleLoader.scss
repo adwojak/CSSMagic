@@ -1,0 +1,17 @@
+@mixin circle-loader($size: 100px, $border-color: rgb(172, 172, 172), $spinner-color: rgb(42, 149, 236), $animation-duration: 2s) {
+    .CircleLoaderSingle {
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        $spinner-size: calc(#{$size} / 10);
+
+        border: $spinner-size solid $border-color;
+        border-top: $spinner-size solid $spinner-color;
+        border-radius: 100%;
+        width: $size;
+        height: $size;
+        animation: rotate $animation-duration linear infinite;
+    }
+}

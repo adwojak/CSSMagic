@@ -1,0 +1,18 @@
+@import "./mixins//dots.scss";
+@import "./mixins/barLoader.scss";
+@import "./mixins//circleLoader.scss";
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(19, 20, 23);
+
+    // @include dots;
+    // @include bar-loader;
+    // @include circle-loader;
+    
+}

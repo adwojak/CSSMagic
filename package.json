@@ -1,0 +1,24 @@
+{
+  "name": "cssmagic",
+  "version": "1.0.0",
+  "description": "Having fun with CSS (mostly animations)",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server src/",
+    "scss": "node-sass --watch src/scss -o src/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adwojak/CSSMagic.git"
+  },
+  "author": "adwojak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adwojak/CSSMagic/issues"
+  },
+  "homepage": "https://github.com/adwojak/CSSMagic#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

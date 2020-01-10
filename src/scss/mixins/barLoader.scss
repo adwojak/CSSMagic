@@ -1,0 +1,18 @@
+@mixin bar-loader($width: 350px, $height: 50px, $bar-color: white, $loader-color: green, $animation-duration: 2s) {
+    .LoaderContainer {
+        width: $width;
+        height: $height;
+        background-color: $bar-color;
+
+        @keyframes load {
+            from { width: 0; }
+            to { width: inherit; }
+        }
+
+        .Loader {
+            height: inherit;
+            background-color: $loader-color;
+            animation: load $animation-duration linear;
+        }
+    }
+}
