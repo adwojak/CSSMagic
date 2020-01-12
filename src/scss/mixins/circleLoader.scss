@@ -4,7 +4,7 @@
   $spinner-color: rgb(42, 149, 236),
   $animation-duration: 2s
 ) {
-  .CircleLoaderSingle {
+  .CircleLoader {
     @keyframes rotate {
       from {
         transform: rotate(0deg);
