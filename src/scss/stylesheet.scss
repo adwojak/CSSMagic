@@ -2,6 +2,7 @@
 @import "./mixins/barLoader.scss";
 @import "./mixins//circleLoader.scss";
 @import "./mixins/burgerButton1.scss";
+@import "./mixins/burgerButton2.scss";
 
 body {
   position: relative;
@@ -16,4 +17,5 @@ body {
   // @include bar-loader;
   // @include circle-loader;
   // @include burger-button-1;
+  // @include burger-button-2;
 }
