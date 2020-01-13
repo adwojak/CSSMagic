@@ -24,6 +24,11 @@
       justify-content: center;
       width: 100%;
       height: 100%;
+      cursor: pointer;
+    }
+
+    & .Active {
+      background-color: rgb(35, 36, 41);
     }
   }
 
@@ -33,6 +38,8 @@
     height: 100%;
     border: none;
     outline: none;
+    overflow: auto;
+    resize: none;
 
     background-color: rgb(35, 36, 41);
     color: white;

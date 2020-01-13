@@ -1,15 +1,45 @@
 import * as React from "react";
+import classNames from "classnames";
 import "./CodeText.scss";
 
-const CodeText = () => {
+const CodeTab = props => {
+  const { children, activeTab, ...properties } = props;
+
   return (
-    <div class="CodeText">
-      <div class="__Header">
-        <span class="__Tab">CSS</span>
-        <span class="__Tab">SCSS</span>
-        <span class="__Tab">LESS</span>
+    <span
+      id={children}
+      className={classNames({
+        __Tab: true,
+        Active: activeTab == children
+      })}
+      {...properties}
+    >
+      {children}
+    </span>
+  );
+};
+
+const CodeText = () => {
+  const [activeTab, setActiveTab] = React.useState("CSS");
+
+  const changeActiveTab = event => {
+    setActiveTab(event.target.id);
+  };
+
+  return (
+    <div className="CodeText">
+      <div className="__Header">
+        <CodeTab onClick={changeActiveTab} activeTab={activeTab}>
+          CSS
+        </CodeTab>
+        <CodeTab onClick={changeActiveTab} activeTab={activeTab}>
+          SCSS
+        </CodeTab>
+        <CodeTab onClick={changeActiveTab} activeTab={activeTab}>
+          LESS
+        </CodeTab>
       </div>
-      <textarea class="__Textarea" readOnly>
+      <textarea className="__Textarea" readOnly>
         text
       </textarea>
     </div>
