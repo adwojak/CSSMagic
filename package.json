@@ -4,8 +4,8 @@
   "description": "Having fun with CSS (mostly animations)",
   "main": "index.js",
   "scripts": {
-    "start": "npx http-server src/",
-    "scss": "node-sass --watch src/scss -o src/css"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,27 @@
     "url": "https://github.com/adwojak/CSSMagic/issues"
   },
   "homepage": "https://github.com/adwojak/CSSMagic#readme",
-  "devDependencies": {},
-  "dependencies": {
-    "node-sass": "^4.13.0"
-  }
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@babel/preset-env": "^7.8.2",
+    "@babel/preset-react": "^7.8.0",
+    "autoprefixer": "^9.7.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.2",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.8.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "sass": "^1.24.4",
+    "sass-loader": "^8.0.1",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {}
 }
